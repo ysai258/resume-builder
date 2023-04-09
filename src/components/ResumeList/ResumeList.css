@@ -1,0 +1,56 @@
+.resume-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resume {
+    width: 50%;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.resume ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.resume .contact {
+    display: flex;
+    justify-content: space-between;
+}
+.resume .experience , .resume .education ,  .resume .skills{
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+}
+.resume .skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume .skills li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    background-color: #e6e6e6;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.resume .skills li:last-child {
+    margin-right: 0;
+}
+
+.resume .skills li:hover {
+    background-color: #d1d1d1;
+}
+
+@media only screen and (max-width: 800px) {
+    .resume {
+        width: 100%;
+    }
+}
